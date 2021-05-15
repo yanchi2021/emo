@@ -7,8 +7,8 @@ from keras.utils import np_utils
 import pandas as pd
 
 class Dataset:
-    TEXT_FEATURE_DUMP = '../vectors/'
-    META_DATA= '../data/books_meta_info.tsv'
+    TEXT_FEATURE_DUMP = '/content/sample_data/emo/emotion_flow-master/emotion_flow-master/vectors/'
+    META_DATA= '/content/sample_data/emo/emotion_flow-master/emotion_flow-master/data/books_meta_info.tsv'
 
     def __init__(self, features, label_extractor, genre=True):
         self.features = features

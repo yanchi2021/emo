@@ -5,8 +5,13 @@ from keras.layers import Dense, Dropout, Bidirectional
 from sklearn.metrics import f1_score, classification_report, confusion_matrix
 import numpy as np
 import os
-from deep_learning.layers import MLPAttention
-from deep_learning.utils import get_optimizers
+
+import sys
+sys.path.append("/content/sample_data/emo/emotion_flow-master/emotion_flow-master/code/deep_learning/layers")
+from attention import *
+import sys
+sys.path.append("/content/sample_data/emo/emotion_flow-master/emotion_flow-master/code/deep_learning")
+from utils import *
 from keras.models import Model
 from keras.layers import Attention
 
